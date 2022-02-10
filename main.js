@@ -1,21 +1,35 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
-
-/**
- * Sečte dvě čísla na vstupu a vrátí výsledek
- *
- * @param {int} a
- * @param {int} b
- */
-function secti(a, b) {
-  let c = a + b;
-  return c;
-}
-
-/**
- * Upozorní uživatele při spuštění.
- */
-function upozorni() {
-  alert("Gratulace, právě jsi spustila tuto funkci!");
-}
+function zobraz() {
+  document.querySelector("#vysledek").innerHTML = secti(4, 5);
+  };
+  
+  /**
+   * Sečte dvě čísla na vstupu a vrátí výsledek
+   *
+   * @param {int} a
+   * @param {int} b
+   */
+  function secti(a, b) {
+    let c = a + b;
+    return c;
+  }
+  
+  let ctverecek = document.querySelector('.ctverecek')
+  /**
+   * Upozorní uživatele při spuštění.
+   */
+  function upozorni() {
+    alert("Gratulace, právě jsi spustila tuto funkci!");
+    console.log('Gratulace, právě jsi spustila tuto funkci!');
+    ctverecek.style.lineHeight = '30px';
+    ctverecek.style.paddingTop = '30px';
+    ctverecek.textContent = 'Gratulace, právě jsi spustila tuto funkci!';
+    
+  }
+  
+  function zezelenej() {
+    ctverecek.style.backgroundColor = 'green';
+    ctverecek.style.color = 'white'
+  }
+  
