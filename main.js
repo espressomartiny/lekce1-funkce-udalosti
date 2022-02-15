@@ -19,12 +19,13 @@ function zobraz() {
   /**
    * Upozorní uživatele při spuštění.
    */
+  let text = "Gratulace, právě jsi spustila tuto funkci!"
   function upozorni() {
-    alert("Gratulace, právě jsi spustila tuto funkci!");
-    console.log('Gratulace, právě jsi spustila tuto funkci!');
+    alert(text);
+    console.log(text);
     ctverecek.style.lineHeight = '30px';
     ctverecek.style.paddingTop = '30px';
-    ctverecek.textContent = 'Gratulace, právě jsi spustila tuto funkci!';
+    ctverecek.textContent = text;
     
   }
   
